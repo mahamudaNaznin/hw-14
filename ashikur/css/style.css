@@ -1,0 +1,49 @@
+/*----common css start----*/
+
+:root{
+    --primary-font:'Poppins', sans-serif;
+    --secondary-font:'PT Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,li{
+    margin:0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+input,.form-control:focus{
+    outline:0;
+    box-shadow: none;
+}
+body{
+    font-family: var(--primary-font);
+}
+h1,h2,h3{
+    font-family: var(--secondary-font);
+}
+/*----common css end----*/
+#primary-nav #primary-menu ul li a{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2;
+    padding: 5px 28px;
+    position:relative;
+    color:#353535 ;
+}
+#primary-nav #primary-menu ul li a::after{
+content: '';
+position: absolute;
+width: 0%;
+height: 1px;
+bottom: 0;
+right: 0;
+background:#353535 ;
+transition: .4s;
+}
+#primary-nav #primary-menu ul li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
